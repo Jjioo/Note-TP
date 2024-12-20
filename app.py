@@ -26,7 +26,8 @@ students_data = {
     "Soummar Roumayssa": "4/7",
     "Tabet Hiba": "5/7",
     "Soltani Raouane": "3.5/7",
-    "Selhami Meriem": "3.5/7"
+    "Selhami Meriem": "3.5/7",
+    "Sahraoui" : "7777/7"
 }
 
 # Temporary state storage
