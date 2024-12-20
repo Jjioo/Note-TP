@@ -1,6 +1,12 @@
+import os
+from dotenv import load_dotenv
 from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 from rapidfuzz import fuzz
+
+# Load environment variables from .env file
+load_dotenv()
+TOKEN = os.getenv("TOKEN")
 
 # Data
 students_data = {
@@ -60,8 +66,6 @@ async def check_name(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 # Main function
 def main():
-    import os
-    TOKEN = "8095623343:AAEsNNsJZb7htSv-E-ADXcWGSydyrfds6Sc"
     app = Application.builder().token(TOKEN).build()
 
     # Handlers
